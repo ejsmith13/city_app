@@ -5,6 +5,7 @@ const locationSchema = new Schema({
   name: { type: String, required: true },
   image: { type: String},
   synopsis:{ type:String},
+  category: {type: String},
   date: { type: Date, default: Date.now }
 });
 
