@@ -9,6 +9,6 @@ const locationSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const Locations = mongoose.model("Locations", locationSchema);
+const Locations = mongoose.model("locations", locationSchema);
 
 module.exports = Locations;

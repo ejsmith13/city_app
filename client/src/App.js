@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Wrapper from "./components/Wrapper";
 import Footer from './components/Footer'
 import NewLocation from './pages/createNew'
+import List from './pages/listView'
 import './App.css';
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
     <div className="App">
      <Navbar />
      <Wrapper>
-     <h1>Initial Test</h1>
      <Route exact path = "/add" component={NewLocation} />
+     <Route exact path = "/list" component={List} />
      </Wrapper>
      
      <Footer/>
