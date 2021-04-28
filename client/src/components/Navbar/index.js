@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <div>
       <nav className="navbar navbar-dark bg-dark">
-        <span className="navbar-brand mb-0 h1">Ethan Smith</span>
+        <span className="navbar-brand mb-0 h1">RCity</span>
         <ul className="nav justify-content-end">
           <li className="nav-item">
             <a className="nav-link active text-white" href="/login">
