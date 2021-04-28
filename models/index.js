@@ -1,4 +1,4 @@
 module.exports = {
-    Location: require("./location")
+    Locations: require("./location")
   };
   

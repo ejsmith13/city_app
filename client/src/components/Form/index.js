@@ -1,26 +1,27 @@
-import React from 'react';
+import React from "react";
 
-const Form = () => {
-    return (
-        <form className="form mt-auto py-3 bg-dark">
-  <div >
-    <label for= "location" className="form-label"> Location</label>
-    <input id= "location" className="form-control" type="text"></input>
-  </div>
-  <div >
-    <label for= "synopsis" className="form-label"> Synopsis</label>
-    <input id= "synopsis" className="form-control" type="text"></input>
-  </div>
-  <div >
-    <label for= "category" className="form-label"> Category</label>
-    <input id= "category" className="form-control" type="text"></input>
-  </div>
 
-  <div>
-    <button type="submit" className="btn btn-primary">Submit</button>
-  </div>
-</form>
-    )
+
+export function Input(props) {
+  return (
+    <div className="form-group">
+      <input className="form-control" {...props} />
+    </div>
+  );
 }
 
-export default Form
+export function TextArea(props) {
+  return (
+    <div className="form-group">
+      <textarea className="form-control" rows="5" {...props} />
+    </div>
+  );
+}
+
+export function FormBtn(props) {
+  return (
+    <button {...props} style={{ marginLeft: "auto", marginBottom: 10 }} className="btn btn-success">
+      {props.children}
+    </button>
+  );
+}

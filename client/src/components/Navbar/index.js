@@ -27,8 +27,8 @@ const NavBar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active text-white" href="/favorites">
-             Favorites
+            <a className="nav-link active text-white" href="/add">
+             Add New Location
             </a>
           </li>
         </ul>

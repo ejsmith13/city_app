@@ -32,8 +32,8 @@ const locationSeed = [
   },
 ];
 
-db.Location.remove({})
-  .then(() => db.Location.collection.insertMany(locationSeed))
+db.Locations.remove({})
+  .then(() => db.Locations.collection.insertMany(locationSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
