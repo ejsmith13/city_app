@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import NewLocation from './pages/createNew'
 import List from './pages/listView'
 import './App.css';
+import MapView from './pages/mapView';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
      <Wrapper>
      <Route exact path = "/add" component={NewLocation} />
      <Route exact path = "/list" component={List} />
+     <Route exact path = "/map" component ={MapView} />
      </Wrapper>
      
      <Footer/>

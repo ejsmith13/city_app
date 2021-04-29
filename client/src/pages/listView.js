@@ -9,7 +9,6 @@ function List() {
       }, [])
 
     function loadPlaces (){
-        console.log("making call")
         API.getLocation()
       .then(res => 
         setPlaces(res.data)
@@ -18,9 +17,9 @@ function List() {
     }
 return(
     <div> 
-        {loadPlaces()}
+        {/* {loadPlaces()} */}
         <h1>List</h1>
-        {console.log(places)}
+        
         {places.map(place => {
             return(<p>{place.name}</p>)
         })}
