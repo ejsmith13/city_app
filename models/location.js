@@ -6,6 +6,10 @@ const locationSchema = new Schema({
   image: { type: String},
   synopsis:{ type:String},
   category: {type: String},
+  position: {
+    lat: {type: Number},
+    lng: {type: Number}
+  },
   date: { type: Date, default: Date.now }
 });
 
