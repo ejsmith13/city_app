@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
+import API from "../../utils/API";
 
 const mapStyles = {
   width: "100%",
@@ -11,23 +12,38 @@ export class MapContainer extends Component {
     showingInfoWindow: false, // Hides or shows the InfoWindow
     activeMarker: {}, // Shows the active marker upon click
     selectedPlace: {}, // Shows the InfoWindow to the selected place upon a marker
+    places: [],
+  };
+
+  
+  componentDidMount() {
+    this.loadPlaces();
+  }
+
+  loadPlaces = () => {
+    API.getLocation()
+      .then((res) => {
+        
+          this.setState({places: res.data} )
+        })
+      .catch((err) => console.log(err));
   };
 
   onMarkerClick = (props, marker, e) =>
-  this.setState({
-    selectedPlace: props,
-    activeMarker: marker,
-    showingInfoWindow: true
-  });
-
-onClose = props => {
-  if (this.state.showingInfoWindow) {
     this.setState({
-      showingInfoWindow: false,
-      activeMarker: null
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true,
     });
-  }
-};
+
+  onClose = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null,
+      });
+    }
+  };
 
   render() {
     return (
@@ -40,22 +56,18 @@ onClose = props => {
           lng: -77.43605,
         }}
       >
-          <Marker
-          onClick={this.onMarkerClick}
-          name={'Test Tag'}
-        />
-        <Marker 
-        position={{lat: 37.556099, lng:-77.474411}}  
-        onClick={this.onMarkerClick}
-          name={'VMFA'}
-          title= {"test"}/>
-
-          <Marker 
-          position={{lat: 37.534401, lng:-77.478233}}  
-          onClick={this.onMarkerClick}
-            name={'Maymont'}
-            
-          />
+          {this.state.places.map(e => {
+              console.log(e)
+              return(
+              <Marker 
+              key= {e.name}
+              name={e.name}
+              position={{lat:`${e.position.lat}`, lng: `${e.position.lng}`}}
+              onClick={this.onMarkerClick}
+              />)
+          })}
+        
+       
 
         <InfoWindow
           marker={this.state.activeMarker}
@@ -66,7 +78,7 @@ onClose = props => {
             <h4>{this.state.selectedPlace.name}</h4>
           </div>
         </InfoWindow>
-          </Map>
+      </Map>
     );
   }
 }

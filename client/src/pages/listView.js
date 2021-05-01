@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Container from '../components/PlaceContainer'
 import API from "../utils/API"
 
 function List() {
@@ -17,12 +18,8 @@ function List() {
     }
 return(
     <div> 
-        {/* {loadPlaces()} */}
-        <h1>List</h1>
-        
-        {places.map(place => {
-            return(<p>{place.name}</p>)
-        })}
+        <Container 
+        places = {places}/>
     </div>
 )
 }
