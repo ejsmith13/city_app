@@ -8,7 +8,7 @@ mongoose.connect(
 const locationSeed = [
   {
     name: "Maymont",
-    image: "none",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Maymont_Mansion.JPG/1024px-Maymont_Mansion.JPG",
     category: "garden",
     position: {lat: 37.534401, lng:-77.478233},
     synopsis:
@@ -17,7 +17,7 @@ const locationSeed = [
   },
   {
     name: "Virginia Musuem of Fine Arts",
-    image: "none",
+    image: "https://images.squarespace-cdn.com/content/v1/595d39d2d482e940948f8507/1502316815507-T9PSB3UO72XWZSCTH6OZ/ke17ZwdGBToddI8pDm48kKtijf5x5S0rIV7X_qDH3dB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UaZbTVdO5VSPAOxIcVIbmIFLIFeVDbQiz7iBIgNCzklBDD2o6CESiqIlH5ssNFrtmA/image-asset.jpeg?format=1500w",
     category: "musuem",
     position: {lat: 37.556099, lng:-77.474411},
     synopsis:
@@ -26,7 +26,7 @@ const locationSeed = [
   },
   {
     name: "Byrd Park",
-    image: "none",
+    image: "http://www.richmondgov.com/Parks/images/imageGeeseByrdPark1.jpg",
     category: "park",
     position: {lat: 37.550770, lng:-77.476593},
     synopsis:

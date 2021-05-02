@@ -7,6 +7,7 @@ import NewLocation from './pages/createNew'
 import List from './pages/listView'
 import './App.css';
 import MapView from './pages/mapView';
+import Home from './pages/home'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
      <Navbar />
      <Wrapper>
+       <Route exact path = {["/", "/home"]} component={Home} />
      <Route exact path = "/add" component={NewLocation} />
      <Route exact path = "/list" component={List} />
      <Route exact path = "/map" component ={MapView} />
