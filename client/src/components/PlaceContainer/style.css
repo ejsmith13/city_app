@@ -1,0 +1,12 @@
+.listContainer{
+    border:gray solid 1px;
+    margin: auto;
+    margin-top: 2px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.thumbnail{
+    width: 150px;
+    float: left;
+}

@@ -12,7 +12,8 @@ import Home from './pages/home'
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div className="App pageContainer">
+      <div className= "contentWrap">
      <Navbar />
      <Wrapper>
        <Route exact path = {["/", "/home"]} component={Home} />
@@ -20,8 +21,8 @@ function App() {
      <Route exact path = "/list" component={List} />
      <Route exact path = "/map" component ={MapView} />
      </Wrapper>
-     
-     <Footer/>
+     </div>
+     <Footer className="footer"/>
      
     </div>
     </Router>

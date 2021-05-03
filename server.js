@@ -22,7 +22,10 @@ app.use(routes);
 
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/rcitylocations", {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+       useCreateIndex: true,
+       useFindAndModify: false
 }).then(() => {
   console.log('Database connected sucessfully !')
 },

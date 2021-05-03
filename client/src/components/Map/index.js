@@ -2,9 +2,14 @@ import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
 import API from "../../utils/API";
 
+
 const mapStyles = {
-  width: "100%",
-  height: "100%",
+  width: "70%",
+  height: "70%",
+  margin: " 10px auto",
+  border: "black solid 3px",
+  borderRadius: "10px",
+  
 };
 
 export class MapContainer extends Component {
@@ -47,6 +52,7 @@ export class MapContainer extends Component {
 
   render() {
     return (
+      <div>
       <Map
         google={this.props.google}
         zoom={14}
@@ -79,6 +85,7 @@ export class MapContainer extends Component {
           </div>
         </InfoWindow>
       </Map>
+      </div>
     );
   }
 }

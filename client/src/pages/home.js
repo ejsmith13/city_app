@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import About from '../components/Home'
+import About from '../components/About'
 import Carousels from '../components/Carousel'
 import API from "../utils/API"
 
@@ -18,7 +18,7 @@ function Home () {
       .catch(err => console.log(err));
     }
     return(
-        <div>
+        <div >
             <About/>
             <Carousels 
             places= {places}/>
