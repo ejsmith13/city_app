@@ -9,8 +9,8 @@ function Container (props){
                <div key={place._id} className="listContainer col-md-10">
                     <li className="list-group-item row">
                     <img src= {place.image} alt={place.name} className="thumbnail col-md-2"/>
-                   <h3 className="col">{place.name}</h3>
-                   <p className="col">{place.synopsis}</p>
+                   <h3 className="row" style={{borderBottom: "3px solid black "}}>{place.name}</h3>
+                   <p className="row">{place.synopsis}</p>
                </li>
                </div>
               
