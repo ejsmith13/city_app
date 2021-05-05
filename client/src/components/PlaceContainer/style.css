@@ -10,3 +10,11 @@
     width: 150px;
     float: left;
 }
+
+.link{
+    color: black;
+}
+
+.link:hover{
+    color: black;
+}

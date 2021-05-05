@@ -11,6 +11,7 @@ import Home from "./pages/home";
 import Landing from "./pages/landing";
 // import { Auth0Provider } from "@auth0/auth0-react";
 import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
+import Place from "./pages/place";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route exact path="/add" component={NewLocation} />
               <Route exact path="/list" component={List} />
               <Route exact path="/map" component={MapView} />
+              <Route exact path= "/locations/:id" component={Place} />
             </Wrapper>
           </div>
           <Footer className="footer" />

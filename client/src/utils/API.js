@@ -8,5 +8,8 @@ export default {
   },
   saveLocation: function(locationData) {
     return axios.post("/api/locations", locationData);
-  }
+  },
+  getPlace: function(id) {
+    return axios.get("/api/locations/" + id);
+  },
 };
