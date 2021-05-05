@@ -9,23 +9,27 @@ import "./App.css";
 import MapView from "./pages/mapView";
 import Home from "./pages/home";
 import Landing from "./pages/landing";
+// import { Auth0Provider } from "@auth0/auth0-react";
+import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
 
 function App() {
   return (
     <Router>
-      <div className="App pageContainer">
-        <div className="contentWrap">
-          <Navbar />
-          <Wrapper>
-            <Route exact path="/landing" component={Landing} />
-            <Route exact path={["/", "/home"]} component={Home} />
-            <Route exact path="/add" component={NewLocation} />
-            <Route exact path="/list" component={List} />
-            <Route exact path="/map" component={MapView} />
-          </Wrapper>
+      <Auth0ProviderWithHistory>
+        <div className="App pageContainer">
+          <div className="contentWrap">
+            <Navbar />
+            <Wrapper>
+              <Route exact path="/" component={Landing} />
+              <Route exact path={["/home"]} component={Home} />
+              <Route exact path="/add" component={NewLocation} />
+              <Route exact path="/list" component={List} />
+              <Route exact path="/map" component={MapView} />
+            </Wrapper>
+          </div>
+          <Footer className="footer" />
         </div>
-        <Footer className="footer" />
-      </div>
+      </Auth0ProviderWithHistory>
     </Router>
   );
 }

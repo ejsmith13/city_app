@@ -12,7 +12,7 @@ const NavBar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active text-white" href="/">
+            <a className="nav-link active text-white" href="/home">
               Home
             </a>
           </li>
