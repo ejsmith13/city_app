@@ -1,8 +1,10 @@
 .homeCarousel{
-    border: Green solid 1px;
+    border: rgb(255, 255, 255) solid 2px;
     width: 40%;
     margin: auto;
     margin-top: 20px;
+    border-radius: 10px;
+    
 }
 
 .placeNames{
@@ -10,4 +12,8 @@
     opacity: 70%;
     border-radius: 10px;
     border:white solid 1px;
+}
+
+img{
+    border-radius: 10px;
 }
