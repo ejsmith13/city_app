@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { Jumbotron, Image } from "react-bootstrap";
 import API from "../utils/API";
 import CloseBtn from "../components/CloseBtn";
 import Hours from "../components/Hours";
 
 function Place(props) {
+  let history = useHistory();
   const [place, setPlace] = useState({});
 
   const { id } = useParams();
@@ -15,9 +16,15 @@ function Place(props) {
       .catch((err) => console.log(err));
   }, []);
 
+  const exitBtn =()=>{
+
+    history.goBack()
+    
+  }
+
   return (
     <div className="container detail-container">
-      <CloseBtn />
+      <CloseBtn exit= {exitBtn} />
       <Jumbotron
         style={{
           backgroundColor: "rgb(0,0,0, 0.4)",
