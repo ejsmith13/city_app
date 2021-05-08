@@ -1,8 +1,6 @@
-
-
 .App {
   text-align: center;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 .App-logo {
@@ -40,40 +38,64 @@
   }
 }
 
-.pageContainer{
+.pageContainer {
   position: relative;
   min-height: 100vh;
   /* background-color: rgb(46, 69, 201); */
-  background-image: linear-gradient(65deg,  rgb(46, 201, 154), rgb(46, 69, 201 ));
+  background-image: linear-gradient(65deg, rgb(46, 201, 154), rgb(46, 69, 201));
 }
 
-.contentWrap{
+.contentWrap {
   padding-bottom: 2.5rem;
 }
 
-.footer{
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
 }
 
-.detail-container{
+.detail-container {
   border: 4px solid white;
   border-radius: 20px;
-  background-color: rgb(64, 80, 97, .5);
+  background-color: rgb(64, 80, 97, 0.5);
   padding-bottom: 10px;
   margin-top: 10px;
 }
 
-.closeBtn{
-  margin-left: 98%; color: white;}
+.closeBtn {
+  margin-left: 98%;
+  color: white;
+}
+.about-container{
+  width: 60%;
+  height: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  color: white;
+  padding-bottom: 10px;
+  
+}
 
-.hoursContainer{
+.home-container {
+  width: 60%;
+  height: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+  border: white solid 3px;
+  border-radius: 10px;
+  background-color: rgb(49, 44, 44, 0.7);
+  margin-top: 30px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.hoursContainer {
   color: white;
   border: 2px white solid;
   border-radius: 15px;
   width: fit-content;
   margin: auto;
-
 }
