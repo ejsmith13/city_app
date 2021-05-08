@@ -6,7 +6,7 @@ const LogoutButton = () => {
   return (
     <button
       className="btn btn-danger btn-block"
-      style={{width: "10%", margin: "auto"}}
+      
       onClick={() =>
         logout({
           returnTo: window.location.origin,
