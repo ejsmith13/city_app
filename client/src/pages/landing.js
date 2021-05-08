@@ -13,6 +13,8 @@ const Landing =()=> {
             <SignupButton />
             <LogoutButton/>
             <AuthenticationButton/>
+
+            
         </div>
     )
 }

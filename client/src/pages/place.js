@@ -15,7 +15,7 @@ function Place(props) {
   }, []);
 
   return (
-    <div className="container detail-container">
+    <div className="container detail-container" >
         <CloseBtn/>
       <Jumbotron
         style={{
