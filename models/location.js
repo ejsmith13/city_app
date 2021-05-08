@@ -10,6 +10,7 @@ const locationSchema = new Schema({
     lat: {type: Number},
     lng: {type: Number}
   },
+  hours:{type: Array},
   date: { type: Date, default: Date.now }
 });
 

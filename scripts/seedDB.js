@@ -32,6 +32,7 @@ const locationSeed = [
     position: { lat: 37.556099, lng: -77.474411 },
     synopsis:
       "The Virginia Musuem of Fine Arts (VMFA) offers visitors several free exhibitions while also hosting a rotating schedule of paid exhibits throughout the year. Visit this local attraction 365 days of the year.",
+      hours: ["Monday: 10:00 AM - 5:00 PM ","Tuesday: 10:00 AM - 5:00 PM ", "Wednesday: 10:00 AM - 9:00 PM ", "Thursday: 10:00 AM - 9:00 PM ","Friday: 10:00 AM - 9:00 PM ","Saturday: 10:00 AM - 5:00 PM ","Sunday: 10:00 AM - 5:00 PM "],
     date: new Date(Date.now()),
   },
   {

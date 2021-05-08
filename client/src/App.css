@@ -65,3 +65,12 @@
 
 .closeBtn{
   margin-left: 98%; color: white;}
+
+.hoursContainer{
+  color: white;
+  border: 2px white solid;
+  border-radius: 15px;
+  width: fit-content;
+  margin: auto;
+
+}

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Jumbotron, Image } from "react-bootstrap";
 import API from "../utils/API";
 import CloseBtn from "../components/CloseBtn";
+import Hours from "../components/Hours";
 
 function Place(props) {
   const [place, setPlace] = useState({});
@@ -15,22 +16,29 @@ function Place(props) {
   }, []);
 
   return (
-    <div className="container detail-container" >
-        <CloseBtn/>
+    <div className="container detail-container">
+      <CloseBtn />
       <Jumbotron
         style={{
           backgroundColor: "rgb(0,0,0, 0.4)",
           borderRadius: "20px",
           width: "90%",
           margin: "10px auto",
-          color: "white"
+          color: "white",
         }}
       >
-        <h1 style={{ textDecoration: "underline"}}>{place.name}</h1>
+        <h1 style={{ textDecoration: "underline" }}>{place.name}</h1>
         <p>{place.synopsis}</p>
       </Jumbotron>
-      <Image src={place.image} alt={place.name} style={{ width: "50%", borderRadius: "70px" }} />
-      
+      <div className ="row">
+        <Image
+          src={place.image}
+          alt={place.name}
+          style={{ width: "50%", borderRadius: "70px", marginLeft: "auto" }}
+        />
+
+        <Hours hours={place.hours} />
+      </div>
     </div>
   );
 }
