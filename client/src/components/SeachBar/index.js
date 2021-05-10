@@ -1,11 +1,11 @@
 import React from "react";
-import "./style.css";
+
 
 function SearchBar(props) {
   return (
     <form className="search">
       <div className="form-group">
-          <label>Search Locations</label>
+          <label className="search-label">Search Locations</label>
         <input
           value={props.search}
           onChange={props.handleInputChange}

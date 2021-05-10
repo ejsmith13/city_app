@@ -44,6 +44,16 @@
   /* background-color: rgb(46, 69, 201); */
   background-image: linear-gradient(65deg, rgb(46, 201, 154), rgb(46, 69, 201));
 }
+.carousel-placeNames{
+  background-color: rgb(43, 41, 41);
+  opacity: 70%;
+  border-radius: 10px;
+  border:white solid 1px;
+}
+
+.carousel-img{
+  border-radius: 10px;
+}
 
 .contentWrap {
   padding-bottom: 2.5rem;
@@ -78,6 +88,14 @@
   padding-bottom: 10px;
   
 }
+.homeCarousel{
+  border: rgb(255, 255, 255) solid 2px;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  
+}
 
 .home-container {
   width: 60%;
@@ -107,4 +125,15 @@
   background-color: rgb(49, 44, 44, 0.7);
   border: 2px white solid;
 
+}
+
+.search-label{
+  color:white;
+}
+
+form.search {
+  overflow: auto;
+  width: 40%;
+  text-align: center;
+  margin: 10px auto;
 }
