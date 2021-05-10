@@ -18,6 +18,7 @@ export class MapContainer extends Component {
     selectedPlace: {}, // Shows the InfoWindow to the selected place upon a marker
     places: [],
   };
+  
 
   componentDidMount() {
     this.loadPlaces();
@@ -55,6 +56,10 @@ export class MapContainer extends Component {
         return <i className="fas fa-university"></i>;
       case "park":
         return <i className="fas fa-tree"></i>;
+      case "shopping":
+        return <i className="fas fa-shopping-bag"></i>;
+      case "food":
+        return <i className="fas fa-utensils"></i>;
       default:
         return <i className="fas fa-question"></i>;
     }

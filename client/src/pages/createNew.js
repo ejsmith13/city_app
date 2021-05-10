@@ -1,43 +1,14 @@
 import React, { useState } from "react";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import API from "../utils/API";
-import { Dropdown } from "react-bootstrap";
+
 
 function NewLocation() {
   const [formObject, setFormObject] = useState({});
-  const [coordinates, setCoordinates] = useState({});
 
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value });
-  }
-
-  function getLatLng() {
-   
-  }
-
-  function post() {
-    console.log(coordinates);
-    API.saveLocation({
-      name: formObject.location,
-      category: formObject.category,
-      synopsis: formObject.synopsis,
-      image: formObject.image,
-      position: { lat: coordinates.lat, lng: coordinates.lng },
-    })
-      .then(() =>
-        setFormObject({
-          location: "",
-          category: "",
-          synopsis: "",
-          image: "",
-          address: "",
-          city: "",
-          state: "",
-        })
-      )
-
-      .catch((err) => console.log(err));
   }
 
   function handleFormSubmit(e) {
@@ -72,8 +43,6 @@ function NewLocation() {
 
         .catch((err) => console.log(err));
     });
-
-    
   }
 
   return (
@@ -116,17 +85,11 @@ function NewLocation() {
               placeholder="Link to Image"
             />
 
-            <Dropdown>
-              <Dropdown.Toggle name="category" id="dropdown-basic">
-                Category
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item>trail</Dropdown.Item>
-                <Dropdown.Item>park</Dropdown.Item>
-                <Dropdown.Item>musuem</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+            <Input
+              onChange={handleInputChange}
+              name="category"
+              placeholder="Category(ie. Park, Trail, Musuem, ect."
+            />
 
             <FormBtn onClick={handleFormSubmit}>Post</FormBtn>
           </form>
