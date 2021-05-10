@@ -99,3 +99,12 @@
   width: fit-content;
   margin: auto;
 }
+
+.input-container{
+  width: 25%;
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: rgb(49, 44, 44, 0.7);
+  border: 2px white solid;
+
+}

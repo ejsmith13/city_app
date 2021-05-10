@@ -32,7 +32,15 @@ const locationSeed = [
     position: { lat: 37.556099, lng: -77.474411 },
     synopsis:
       "The Virginia Musuem of Fine Arts (VMFA) offers visitors several free exhibitions while also hosting a rotating schedule of paid exhibits throughout the year. Visit this local attraction 365 days of the year.",
-      hours: ["Monday: 10:00 AM - 5:00 PM ","Tuesday: 10:00 AM - 5:00 PM ", "Wednesday: 10:00 AM - 9:00 PM ", "Thursday: 10:00 AM - 9:00 PM ","Friday: 10:00 AM - 9:00 PM ","Saturday: 10:00 AM - 5:00 PM ","Sunday: 10:00 AM - 5:00 PM "],
+    hours: [
+      "Monday: 10:00 AM - 7:00 PM ",
+      "Tuesday: 10:00 AM - 7:00 PM ",
+      "Wednesday: 10:00 AM -7:00 PM ",
+      "Thursday: 10:00 AM -7:00 PM ",
+      "Friday: 10:00 AM -7:00 PM ",
+      "Saturday: 10:00 AM - 7:00 PM ",
+      "Sunday: 10:00 AM - 7:00 PM ",
+    ],
     date: new Date(Date.now()),
   },
   {
@@ -42,6 +50,15 @@ const locationSeed = [
     position: { lat: 37.55077, lng: -77.476593 },
     synopsis:
       "Byrd park offers visitors a great place to walk and explore a more natural side of the city. Enjoy fountain lake, the round house, and the Carillion on your walk.",
+    hours: [
+      "Monday: 12:00 AM - 12:00 PM ",
+      "Tuesday: 12:00 AM - 12:00 PM ",
+      "Wednesday: 12:00 AM - 12:00 PM ",
+      "Thursday: 12:00 AM - 12:00 PM ",
+      "Friday: 12:00 AM - 12:00 PM ",
+      "Saturday: 12:00 AM - 12:00 PM ",
+      "Sunday: 12:00 AM - 12:00 PM ",
+    ],
     date: new Date(Date.now()),
   },
   {
@@ -52,6 +69,15 @@ const locationSeed = [
     position: { lat: 37.539749, lng: -77.452988 },
     synopsis:
       "This historic cemetary in Richmond's Oregon Hill district is the final resting place of several US Presidents. It offers beautiful views of the James river and miles of scerene trails.",
+    hours: [
+      "Monday: 8:00 AM - 6:00 PM ",
+      "Tuesday: 8:00 AM - 6:00 PM ",
+      "Wednesday: 8:00 AM - 6:00 PM ",
+      "Thursday: 8:00 AM - 6:00 PM ",
+      "Friday: 8:00 AM - 6:00 PM ",
+      "Saturday: 8:00 AM - 6:00 PM ",
+      "Sunday: 8:00 AM - 6:00 PM ",
+    ],
     date: new Date(Date.now()),
   },
   {
@@ -62,6 +88,15 @@ const locationSeed = [
     position: { lat: 37.55593, lng: -77.46687 },
     synopsis:
       "This small but beautiful park is a truley hidden gem. Situated in the heart of Richmond's Fan District, it is a beautiful spot to have lunch or meet up with friends.",
+    hours: [
+      "Monday: 7:00 AM - 8:00 PM ",
+      "Tuesday: 7:00 AM - 8:00 PM ",
+      "Wednesday: 7:00 AM - 8:00 PM ",
+      "Thursday: 7:00 AM - 8:00 PM ",
+      "Friday: 7:00 AM - 8:00 PM ",
+      "Saturday: 7:00 AM - 8:00 PM ",
+      "Sunday: 7:00 AM - 8:00 PM ",
+    ],
     date: new Date(Date.now()),
   },
 ];
