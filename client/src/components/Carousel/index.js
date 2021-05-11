@@ -15,7 +15,7 @@ function Carousels(props) {
                 alt={place.name}
               />
               <Carousel.Caption>
-                  <div className="container carousel-placeNames">
+                  <div className=" carousel-placeNames">
                 <h5>{place.name}</h5>
                 </div>
               </Carousel.Caption>
