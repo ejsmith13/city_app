@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import API from "../utils/API";
 
-
 function NewLocation() {
   const [formObject, setFormObject] = useState({});
 
@@ -68,16 +67,21 @@ function NewLocation() {
               name="address"
               placeholder="Address"
             />
-            <Input
-              onChange={handleInputChange}
-              name="city"
-              placeholder="City"
-            />
-            <Input
-              onChange={handleInputChange}
-              name="state"
-              placeholder="State"
-            />
+
+            <div className="row">
+              <Input
+                onChange={handleInputChange}
+                name="city"
+                placeholder="City"
+                className="col-md-8"
+              />
+              <Input
+                onChange={handleInputChange}
+                name="state"
+                placeholder="State"
+                className="col-md-4"
+              />
+            </div>
 
             <Input
               onChange={handleInputChange}
