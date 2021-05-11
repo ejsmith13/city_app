@@ -11,7 +11,7 @@ function About () {
                 a lazy Sunday afternoon, we have what you are looking for. Places are added by locals to showcase
                 all the unique activities that Richmond has to offer.
             </p>
-            <Button>Explore!</Button>
+            <Button><a href="/map" style={{color: "white"}}>Explore Richmond!</a></Button>
         </div>
     )
 }
