@@ -68,7 +68,7 @@ function NewLocation() {
               placeholder="Address"
             />
 
-            
+            <div className="row">
               <Input
                 onChange={handleInputChange}
                 name="city"
@@ -79,9 +79,9 @@ function NewLocation() {
                 onChange={handleInputChange}
                 name="state"
                 placeholder="State"
-                className="col-md-2"
+                className="col-md-4"
               />
-            
+            </div>
 
             <Input
               onChange={handleInputChange}
