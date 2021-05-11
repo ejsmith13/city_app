@@ -39,7 +39,7 @@ function List() {
   return (
     <div>
       <SearchBar handleInputChange={handleInputChange} />
-      <Container places={
+      <Container className="search-container" places={
         filtered.length 
         ? filtered
         : places} />

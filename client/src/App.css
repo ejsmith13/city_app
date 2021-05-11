@@ -99,7 +99,6 @@
 
 .home-container {
   width: 60%;
-  
   margin: auto;
   margin-bottom: 20px;
   border: white solid 3px;
@@ -136,4 +135,32 @@ form.search {
   width: 40%;
   text-align: center;
   margin: 10px auto;
+}
+.listContainer{
+  border:gray solid 1px;
+  margin: auto;
+  margin-top: 2px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.thumbnail{
+  width: 150px;
+  float: left;
+}
+
+.link{
+  color: black;
+}
+
+.link:hover{
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 440px) {
+  .home-container {
+    width: 100%;
+    margin: 10% auto;
+  }
+ 
 }
