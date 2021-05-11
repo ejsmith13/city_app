@@ -61,7 +61,7 @@ export class MapContainer extends Component {
       case "food":
         return <i className="fas fa-utensils"></i>;
       default:
-        return <i className="fas fa-question"></i>;
+        return <i>Various</i>;
     }
   };
 

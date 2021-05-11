@@ -20,7 +20,7 @@ function NewLocation() {
       console.log(response.data.results[0].geometry);
       API.saveLocation({
         name: formObject.location,
-        category: formObject.category,
+        category: formObject.category.toLowerCase(),
         synopsis: formObject.synopsis,
         image: formObject.image,
         position: {
@@ -73,13 +73,13 @@ function NewLocation() {
                 onChange={handleInputChange}
                 name="city"
                 placeholder="City"
-                className="col-md-6"
+                className="col"
               />
               <Input
                 onChange={handleInputChange}
                 name="state"
                 placeholder="State"
-                className="col-md-4"
+                className="col"
               />
             </div>
 
