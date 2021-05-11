@@ -5,6 +5,10 @@ import API from "../utils/API";
 function NewLocation() {
   const [formObject, setFormObject] = useState({});
 
+  function resetForm() {
+    document.getElementById("inputForm").reset();
+  }
+
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value });
@@ -28,16 +32,19 @@ function NewLocation() {
           lng: response.data.results[0].geometry.location.lng,
         },
       })
-        .then(() =>
-          setFormObject({
-            location: "",
-            category: "",
-            synopsis: "",
-            image: "",
-            address: "",
-            city: "",
-            state: "",
-          })
+        .then(
+          () =>
+            setFormObject({
+              location: "",
+              category: "",
+              synopsis: "",
+              image: "",
+              address: "",
+              city: "",
+              state: "",
+            }),
+
+          resetForm()
         )
 
         .catch((err) => console.log(err));
@@ -49,7 +56,7 @@ function NewLocation() {
       <div className="row">
         <div className="col-md-6" style={{ margin: "auto" }}>
           <h1 style={{ color: "white" }}>Add a new Location</h1>
-          <form>
+          <form id="inputForm">
             <Input
               onChange={handleInputChange}
               name="location"
@@ -68,20 +75,16 @@ function NewLocation() {
               placeholder="Address"
             />
 
-            
-              <Input
-                onChange={handleInputChange}
-                name="city"
-                placeholder="City"
-                
-              />
-              <Input
-                onChange={handleInputChange}
-                name="state"
-                placeholder="State"
-                
-              />
-            
+            <Input
+              onChange={handleInputChange}
+              name="city"
+              placeholder="City"
+            />
+            <Input
+              onChange={handleInputChange}
+              name="state"
+              placeholder="State"
+            />
 
             <Input
               onChange={handleInputChange}
