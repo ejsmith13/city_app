@@ -16,7 +16,7 @@ const Auth0ProviderWithHistory = ({ children }) => {
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUri={window.location.origin}
+      redirectUri={process.env.NODE_ENV !== "production" ? "http://localhost:3000/home" : "https://murmuring-headland-42989.herokuapp.com/home"}
       onRedirectCallback={onRedirectCallback}
     >
       {children}
