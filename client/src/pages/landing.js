@@ -7,12 +7,18 @@ import AuthenticationButton from '../components/AuthenticationBtn'
 
 const Landing =()=> {
     return(
-        <div>
-            <h1>this is the landing page</h1>
-            <LoginButton/>
-            <SignupButton />
-            <LogoutButton/>
-            <AuthenticationButton/>
+        <div className="landing">
+
+            <div className= "welcomeContainer">
+                <h1> R City:</h1>
+                <h2 style={{paddingBottom: "45%"}}>Explore Richmond the Local Way</h2>
+                
+
+                <LoginButton 
+               />
+
+            </div>
+        
 
             
         </div>

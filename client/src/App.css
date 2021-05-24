@@ -41,8 +41,9 @@
 .pageContainer {
   position: relative;
   min-height: 100vh;
+  background-color: blanchedalmond;
   /* background-color: rgb(46, 69, 201); */
-  background-image: linear-gradient(65deg, rgb(46, 201, 154), rgb(46, 69, 201));
+  /* background-image: linear-gradient(65deg, rgb(46, 201, 154), rgb(46, 69, 201)); */
 }
 .carousel-placeNames{
   background-color: rgb(43, 41, 41);
@@ -120,7 +121,7 @@
 .input-container{
   width: 60%;
   margin: 10px auto;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: rgb(49, 44, 44, 0.7);
   border: 2px white solid;
 
@@ -149,6 +150,7 @@ form.search {
   float: left;
 }
 
+
 .link{
   color: black;
 }
@@ -156,6 +158,26 @@ form.search {
 .link:hover{
   color: rgb(0, 0, 0);
 }
+
+.landing{
+  background-size: cover;
+  min-height: 100vh;
+  background-image: url("https://www.avepoint.com/blog/careers/wp-content/uploads/sites/3/2019/07/RVA.jpg") ;
+}
+
+.welcomeContainer{
+  font-family: 'Roboto', sans-serif;
+  /* border: red solid 3px; */
+  width: 60%;
+  text-align: center;
+  margin: auto auto;
+  /* padding-top: 5%; */
+  text-decoration: underline;
+  color: white;
+  
+}
+
+
 
 @media screen and (max-width: 440px) {
   .home-container {

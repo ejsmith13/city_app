@@ -51,7 +51,7 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <AuthenticationButton />
+              <AuthenticationButton className="btn btn-primary btn-block" />
             </li>
           </ul>
         </div>
