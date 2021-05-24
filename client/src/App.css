@@ -176,6 +176,9 @@ form.search {
   color: white;
   
 }
+.thumbnail{
+  max-height: 100px;
+}
 
 
 

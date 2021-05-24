@@ -31,6 +31,9 @@ function NewLocation() {
           lat: response.data.results[0].geometry.location.lat,
           lng: response.data.results[0].geometry.location.lng,
         },
+        address: formObject.address,
+        city: formObject.city,
+        state: formObject.state
       })
         .then(
           () =>
