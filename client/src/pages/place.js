@@ -28,7 +28,7 @@ function Place(props) {
       <Jumbotron
         style={{
           backgroundColor: "rgb(0,0,0, 0.4)",
-          borderRadius: "20px",
+          borderRadius: "5px",
           width: "90%",
           margin: "10px auto",
           color: "white",
